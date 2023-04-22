@@ -36,7 +36,25 @@ Create a personalized logo easily on your own.
 
 ## 🧪 Test
 
-Testing with Jest
+Testing with Jest completed. Testing completed for each shape to ensure output was correct. 
+``` js
+const { Shapes, Circle, Triangle, Square } = require("../Shape");
+
+describe("Shapes", () => {
+  // Test case for circle
+  describe("Circle", () => {
+    test("returns a circle shape", () => {
+      const text = "CAS";
+      const textColor = "white";
+      const shapeColor = "pink";
+      // Create new circle object with the defined variables
+      const circle = new Circle(text, textColor, shapeColor);
+      // Testing that rendered circle contains "circle"
+      expect(circle.render()).toContain("circle");
+    });
+```
+
+![Jest Testing Output](./images/shape-tests.png)
 
 ## ❓ Questions
 
