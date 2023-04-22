@@ -37,9 +37,9 @@ function init() {
     inquirer.prompt(questions)
         .then((answers) => {
             // console.log(answers);
-            const shape = new Shapes(answers.text, answers.color, answers.shapeColor)
-            
-            fs.writeFile('./examples/log.svg', shape.render(), (err) => 
+            const shape = new Shapes(answers.text, answers.color, answers.shapeColor, answers.shape)
+
+            fs.writeFile('./examples/log.svg', shape.render(), (err) =>
                 err ? console.error(err) : console.log("Logo has been created!"))
 
         })
