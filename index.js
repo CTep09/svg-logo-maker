@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { default: Choice } = require('inquirer/lib/objects/choice');
+// const { default: Choice } = require('inquirer/lib/objects/choice');
 const { Shapes, Circle, Square, Triangle } = require('./lib/Shape')
 
 const questions = [
@@ -39,8 +39,8 @@ function init() {
             // console.log(answers);
             const shape = new Shapes(answers.text, answers.color, answers.shapeColor, answers.shape)
 
-            fs.writeFile('./examples/log.svg', shape.render(), (err) =>
-                err ? console.error(err) : console.log("Logo has been created!"))
+            fs.writeFile('./examples/logo.svg', shape.render(), (err) =>
+                err ? console.error(err) : console.log("Generated logo.svg"))
 
         })
 }
