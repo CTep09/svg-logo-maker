@@ -1,7 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-// const { default: Choice } = require('inquirer/lib/objects/choice');
-const { Shapes, Circle, Square, Triangle } = require('./lib/Shape')
+const { Shapes } = require('./lib/Shape')
 
 const questions = [
     {

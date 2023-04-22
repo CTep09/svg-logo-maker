@@ -2,13 +2,16 @@
 
 [![License](https://img.shields.io/badge/license-MIT-ff69b4)](https://opensource.org/license/MIT)
 
+[![My Skills](https://skillicons.dev/icons?i=js)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=nodejs)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=jest)](https://skillicons.dev)
+
 ## Table of Contents
 
 - [**Description**](#📑-description)
 - [**Installation**](#💾-installation)
 - [**Usage**](#💻-usage)
 - [**Technology**](#🦾-technology)
-- [**Contribution**](#🤝-contribution)
 - [**Test**](#🧪-test)
 - [**Questions**](#❓-questions)
 
@@ -22,7 +25,7 @@ From the GitHub Repository, clone down the svg-generator to your machine. Once i
 
 ## 💻 Usage
 
-Create a personalized logo easily on your own.
+Web developers dream, creating a personalized logo with command-line application and no CSS. 
 
 ## 🦾 Technology
 - JavaScript 
@@ -30,9 +33,6 @@ Create a personalized logo easily on your own.
 - Inquire 8.2.4
 - SVG v1.5.2
 - Jest
-
-
-## 🤝 Contribution
 
 ## 🧪 Test
 
@@ -52,6 +52,8 @@ describe("Shapes", () => {
       // Testing that rendered circle contains "circle"
       expect(circle.render()).toContain("circle");
     });
+  })
+})
 ```
 
 ![Jest Testing Output](./images/shape-tests.png)
