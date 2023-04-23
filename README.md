@@ -2,10 +2,6 @@
 
 [![License](https://img.shields.io/badge/license-MIT-ff69b4)](https://opensource.org/license/MIT)
 
-[![My Skills](https://skillicons.dev/icons?i=js)](https://skillicons.dev)
-[![My Skills](https://skillicons.dev/icons?i=nodejs)](https://skillicons.dev)
-[![My Skills](https://skillicons.dev/icons?i=jest)](https://skillicons.dev)
-
 ## Table of Contents
 
 - [**Description**](#📑-description)
@@ -25,36 +21,19 @@ From the GitHub Repository, clone down the svg-generator to your machine. Once i
 
 ## 💻 Usage
 
-Web developers dream, creating a personalized logo with command-line application and no CSS. 
+Web developers dream, creating a personalized logo with command-line application and no CSS. Run `node index.js` to initialize the application and create as many unique logos as you would like. Files are saved as `.svg` 
 
 ## 🦾 Technology
-- JavaScript 
-- Node.js
-- Inquire 8.2.4
-- SVG v1.5.2
-- Jest
+[![My Skills](https://skillicons.dev/icons?i=js,nodejs,jest,svg)](https://skillicons.dev)
+
+**Inquirer 8.2.4**
+
 
 ## 🧪 Test
 
 Testing with Jest completed. Testing completed for each shape to ensure output was correct. 
-``` js
-const { Shapes, Circle, Triangle, Square } = require("../Shape");
 
-describe("Shapes", () => {
-  // Test case for circle
-  describe("Circle", () => {
-    test("returns a circle shape", () => {
-      const text = "CAS";
-      const textColor = "white";
-      const shapeColor = "pink";
-      // Create new circle object with the defined variables
-      const circle = new Circle(text, textColor, shapeColor);
-      // Testing that rendered circle contains "circle"
-      expect(circle.render()).toContain("circle");
-    });
-  })
-})
-```
+
 
 ![Jest Testing Output](./images/shape-tests.png)
 
