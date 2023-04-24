@@ -35,7 +35,7 @@ Testing with Jest completed. Testing completed for each shape to ensure output w
 
 
 
-![Jest Testing Output](./images/shape-tests.png)
+![Jest Testing Output]()
 
 ## ❓ Questions
 
