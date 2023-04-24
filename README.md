@@ -1,5 +1,7 @@
 # SVG Logo Maker
 
+![Created with SVG Logo Maker](./images/logo.svg)
+
 [![License](https://img.shields.io/badge/license-MIT-ff69b4)](https://opensource.org/license/MIT)
 
 ## Table of Contents
@@ -15,7 +17,7 @@
 
 SVG Generator enables the user to create a cool svg logo. This command-line application prompts the user with 4 questions to create a unique logo. The user can have up to three letters in their logo with the text color of their choosing. The logo can be one of three shapes: circle, triangle or a square with a fill color that the user selects.
 
-[Walkthrough Video Here](https://drive.google.com/file/d/1n25iX6PG1L159FTLhneuhuaDYbxTjz8h/view)
+[Walkthrough Video Here](https://youtu.be/aZxuyF5UvqI)
 
 ## 💾 Installation
 
