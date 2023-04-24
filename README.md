@@ -27,6 +27,9 @@ From the GitHub Repository, clone down the svg-generator to your machine. Once i
 
 Web developers dream, creating a personalized logo with command-line application and no CSS. Run `node index.js` to initialize the application and create as many unique logos as you would like. Files are saved as `.svg` 
 
+![CLI Application Prompts](./images/svg-prompts.gif)
+
+
 ## 🦾 Technology
 [![My Skills](https://skillicons.dev/icons?i=js,nodejs,jest,svg)](https://skillicons.dev)
 
@@ -35,8 +38,30 @@ Web developers dream, creating a personalized logo with command-line application
 
 ## 🧪 Test
 
-Testing with Jest completed. Testing completed for each shape to ensure output was correct. 
+Testing with Jest completed. Testing completed for each shape to ensure shape and color were correct. 
 
+``` js
+const { Circle } = require("../Circle");
+const { Triangle } = require("../Triangle");
+const { Square } = require("../Square");
+
+describe("Circle", () => {
+  it("should render a circle shape in the correct color", () => {
+    let text = "CAS";
+    let textColor = "pink";
+    let shapeColor = "red";
+
+    let circle = new Circle(text, textColor, shapeColor);
+
+    let output = `<svg width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <rect width="100%" height="100%" fill="white" />
+      <circle cx="100" cy="100" r="80" fill="${shapeColor}" />
+      <text x="100" y="100" font-family="monospace" font-size="3em" fill="${textColor}" text-anchor="middle" alignment-baseline="middle">${text}</text>
+    </svg>`;
+    expect(circle.render()).toEqual(output);
+  });
+});
+```
 
 
 ![Jest Testing Output]()
