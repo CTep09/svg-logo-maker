@@ -15,6 +15,8 @@
 
 SVG Generator enables the user to create a cool svg logo. This command-line application prompts the user with 4 questions to create a unique logo. The user can have up to three letters in their logo with the text color of their choosing. The logo can be one of three shapes: circle, triangle or a square with a fill color that the user selects.
 
+[Walkthrough Video Here](https://drive.google.com/file/d/1n25iX6PG1L159FTLhneuhuaDYbxTjz8h/view)
+
 ## 💾 Installation
 
 From the GitHub Repository, clone down the svg-generator to your machine. Once installed, and in the folder, run `npm i` install necessary files, including inquirer@8.2.4. It is highly recommended that the user download an SVG Preview extension to view output in correct format. 
